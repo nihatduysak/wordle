@@ -1,0 +1,75 @@
+*, *::before, *::after {box-sizing: border-box;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {font: inherit;}
+
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+
+ul {list-style: none;}
+
+body {
+    font: 22px/1 Arial;
+    padding-top: 40px;
+}
+
+.gameBox {
+    width: 200px;
+    margin: 0 auto;
+    user-select: none;
+    display: grid;
+    gap: 5px;
+
+}
+
+.row {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.letter {
+    border: 2px solid lightgray;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-height: 35px;
+} 
+
+.active {
+    border-color: #000;
+}
+
+.fail {
+    border-color: darkgray;
+    background-color: darkgray;
+    color: #fff;
+}
+
+/* yanlis sira */
+.wrong {
+    border-color: #F2E86D;
+    background-color: #F2E86D;
+    color: #fff;
+}
+
+.ok {
+    border-color: #5CAD76;
+    background-color: #5CAD76;
+    color: #fff;
+}
+
